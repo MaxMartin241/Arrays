@@ -24,7 +24,7 @@ namespace Arrays
         private void runButton_Click(object sender, EventArgs e)
         {
             //array gen
-            numbers = new int[9] { randgen.Next(1,10), randgen.Next(1, 10), randgen.Next(1, 10), randgen.Next(1, 10), randgen.Next(1, 10), randgen.Next(1, 10), randgen.Next(1, 10), randgen.Next(1, 10), randgen.Next(1,10)};
+            numbers = new int[9] { randgen.Next(1,10), randgen.Next(1, 10), randgen.Next(1, 10), randgen.Next(1, 10), randgen.Next(1, 10), randgen.Next(1, 10), randgen.Next(1, 10), randgen.Next(1, 10), randgen.Next(1,10)};//creating array
             
             //array 1 output
             array1Label.Text = "Array1: ";//clear label to begin
@@ -52,7 +52,7 @@ namespace Arrays
                 }
 
             }
-            numOfMatchingLabel.Text ="Number of matching \n numbers in the\n same spot: " + Convert.ToString(numOfMatching);
+            numOfMatchingLabel.Text ="Number of matching \n numbers in the\n same spot: " + Convert.ToString(numOfMatching);//output
 
             //array 1 reverse 
             Array.Reverse(numbers);
@@ -70,7 +70,7 @@ namespace Arrays
             Double sum = 0;
             double average = 0;
             avrageLabel.Text = "Avrage: ";
-            for (int i = 0; i < numbers.Length; i++)
+            for (int i = 0; i < numbers.Length; i++)//calculations
             {
                 sum = sum + Convert.ToDouble(numbers[i]);
             }
